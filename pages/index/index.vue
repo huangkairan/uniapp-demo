@@ -2,16 +2,18 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
-			<text class="title">{{title}}</text>
+			<hello-world/>
 		</view>
 	</view>
 </template>
 
 <script>
+	import HelloWorld from '../components/HelloWorld.vue'
 	export default {
+		components:{HelloWorld},
 		data() {
 			return {
-				title: 'HelloWorld'
+				
 			}
 		},
 		onLoad() {
