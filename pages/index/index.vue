@@ -2,18 +2,25 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
-			<hello-world/>
+			<hello-world />
+		</view>
+		<view class="counter">
+			<Counter />
 		</view>
 	</view>
 </template>
 
 <script>
 	import HelloWorld from '../components/HelloWorld.vue'
+	import Counter from '../components/Counter.vue'
 	export default {
-		components:{HelloWorld},
+		components: {
+			HelloWorld,
+			Counter
+		},
 		data() {
 			return {
-				
+
 			}
 		},
 		onLoad() {
